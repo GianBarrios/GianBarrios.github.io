@@ -21,11 +21,26 @@
         <div class="container_button">
             <button>Descargar CV</button>
         </div>
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
     </nav>
-    <div >
-        <div class="container_foto">
-            <img src="" alt="">
-        </div>    
+    <div class="menu-content" id="menu-content">
+        <a href="">Estudios</a>
+        <a href="">Experiencia</a>
+        <a href="">Proyectos</a>
+        <a href="">Sobre Mi</a>
+        <a href="">Contacto</a>
+        <a href=""><button>Descargar CV</button></a>
     </div>
+
+    <script>
+        function toggleMenu() {
+            var menuContent = document.getElementById('menu-content');
+            if (menuContent.style.display === 'none' || menuContent.style.display === '') {
+                menuContent.style.display = 'flex';
+            } else {
+                menuContent.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

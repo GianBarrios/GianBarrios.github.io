@@ -1,31 +1,8 @@
-@media(max-width:768px) {
-    .container_link {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    .container_button {
-        text-align: center;
-        margin-top: 5px;
-    }
-    .container_nombre, .container_link, .container_button{
-        flex: 1;
-        text-align: center;
-    }
-    h1{
-        font-size: 0.5rem;
-    }
-    .container_link a{
-        font-size: 0.4rem;
-        padding: 4px 8px;
-    }
-}
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -36,26 +13,31 @@ nav {
     width: 100%;
     box-sizing: border-box;
 }
-.container_nombre{
+
+.container_nombre {
     flex: 1;
     text-align: left;
 }
+
 .container_link {
     flex: 2;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+
 .container_link a {
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
 }
-.container_button{
+
+.container_button {
     flex: 1;
     text-align: right;
 }
-.container_button button{
+
+.container_button button {
     padding: 10px 20px;
     background-color: #007BFF;
     color: white;
@@ -65,10 +47,51 @@ nav {
     font-size: 16px;
     transition: background-color 0.3s;
 }
+
 .container_button button:hover {
     background-color: #0056b3;
 }
+
 h1 {
-    font-size: 1.2rem;
+    font-size: 2rem; /* Ajuste de tamaño de fuente responsive */
     margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container_link, .container_button {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #f8f9fa;
+        border-top: 1px solid #ddd;
+    }
+
+    .menu-content a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #007BFF;
+        font-weight: bold;
+        border-bottom: 1px solid #ddd;
+    }
 }
