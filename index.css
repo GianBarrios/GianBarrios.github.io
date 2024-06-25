@@ -1,5 +1,5 @@
 /* Estilos responsivos */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .container_link, .container_button {
         display: none;
     }
@@ -34,6 +34,17 @@
         color: #007BFF;
         font-weight: bold;
         border-bottom: 1px solid #ddd;
+    }
+
+    .container_body {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .container_foto, .container_presentacion{
+        order: 0;
+        flex: unset;
+        text-align: center;
+        margin: 10px 0;
     }
 }
 body {
@@ -108,5 +119,11 @@ h1 {
    order: 1;
     flex: 2;
     text-align: left;
+    
 }
-
+.container_presentacion h1{
+ margin-bottom: 25px;       
+}
+.container_presentacion h3{
+    margin: 0;
+}
