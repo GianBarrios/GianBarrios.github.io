@@ -1,4 +1,3 @@
-/* Estilos responsivos */
 @media (max-width: 768px) {
     .container_link, .container_button {
         display: none;
@@ -36,17 +35,65 @@
         border-bottom: 1px solid #ddd;
     }
 
+    .menu-content button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+    }
+
     .container_body {
         flex-direction: column-reverse;
         text-align: center;
     }
-    .container_foto, .container_presentacion{
+
+    .container_foto, .container_presentacion {
         order: 0;
         flex: unset;
         text-align: center;
         margin: 10px 0;
     }
+
+    .container_about {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about {
+        order: 0;
+        flex: unset;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .container_herramientas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .container_informacion {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .container_edad, .container_residencia, .container_direccion, .container_correo, .container_telefono {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .container_edad .edad, .container_residencia .residencia, .container_direccion .direccion, .container_correo .correo, .container_telefono .telefono {
+        padding-right: 0;
+    }
 }
+
 
 body {
     margin: 0;
@@ -105,6 +152,7 @@ h1 {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    background-color: grey;
 }
 .container_foto {
     order: 2;
@@ -112,7 +160,7 @@ h1 {
     text-align: right;
 }
 .container_foto img{
-    max-width: 100%;
+    max-width: 15rem;
     height: auto;
     border-radius: 100%;
 }
@@ -120,6 +168,19 @@ h1 {
     order: 1;
     flex: 2;
     text-align: left;
+}
+.container_presentacion h1{
+    padding-bottom: 2rem;
+}
+.container_presentacion h3{
+    margin: 0;
+    padding: 0;
+}
+.menu-button {
+    display: none;
+}
+.menu-content{
+    display: none;
 }
 .container_presentacion h1, .container_presentacion h2 {
     margin: 0;
@@ -139,3 +200,115 @@ h1 {
 .about h3 {
     margin: 0;
 }
+.valores {
+    margin-right: 5rem;
+}
+.valores h2 {
+    margin-left: 5rem;
+    margin-bottom: 0;
+}
+.valores h3{
+    margin: 0;
+}
+.container_herramientas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 5rem;
+}
+.container_informacion {
+    margin-left: 4rem;
+    border-radius: 3px;
+    margin-bottom: 3px;
+}
+.container_edad {
+    display: flex;
+    background-color: #DCD9D8;
+    margin-bottom: 0.4rem;
+    border-radius: 10px;
+    padding-left: 0.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.edad{
+    padding-right: 2rem;
+}
+.edad_num{
+    padding-right: 10rem;
+    padding-left: 2rem;
+}
+.container_residencia {
+    display: flex;
+    margin-bottom: 0.4rem;
+    border-radius: 10px;
+    padding-left: 0.3rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 2px silver solid;
+}
+.residencia {
+    padding-right: 1.2rem;
+}
+
+.container_direccion{
+    display: flex;
+    background-color: #DCD9D8;
+    margin-bottom: 0.4rem;
+    border-radius: 10px;
+    padding-left: 0.3rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.direccion{
+    padding-right: 2rem;
+}
+.container_correo{
+    display: flex;
+    border: 2px silver solid;
+    margin-bottom: 0.4rem;
+    border-radius: 10px;
+    padding-left: 0.3rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.correo {
+    padding-right: 3rem;
+}
+.container_telefono{
+    display: flex;
+    background-color: #DCD9D8;
+    margin-bottom: 0.4rem;
+    border-radius: 10px;
+    padding-left: 0.3rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.telefono {
+    padding-right: 2.5rem;
+}
+.border_herramientas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    border: 1px #DCD9D8 solid ;
+}
+.border_herramientas > div {
+    border: 4px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.porcentaje_html, .porcentaje_css, .porcentaje_js, .porcentaje_php, .porcentaje_angular, .porcentaje_cplus{
+font-size: 1.2rem;
+font-weight: bold;
+}
+.porcentaje_html, .porcentaje_css, .porcentaje_js, .porcentaje_php, .porcentaje_angular, .porcentaje_cplus{
+    font-size: 1em;
+    margin-top: 5px;
+    }
