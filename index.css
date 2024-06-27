@@ -230,12 +230,12 @@ h1 {
     .container_link {
         flex-direction: row;
         align-items: center;
-        font-size: 65%;
+        font-size: 75%;
     }
     .container_button {
         text-align: center;
         margin-bottom: 10px;
-        padding-left: 20%;
+        padding-left: 50%;
     }
     .container_body {
         flex-direction: column;
