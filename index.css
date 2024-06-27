@@ -124,6 +124,9 @@ h1 {
     border-radius: 3px;
     margin-bottom: 3px;
 }
+.container_informacion h1{
+    text-align: center;
+}
 .container_edad {
     display: flex;
     background-color: #DCD9D8;
@@ -192,6 +195,9 @@ h1 {
 .telefono {
     padding-right: 2.5rem;
 }
+.intermedio h1 {
+    text-align: center;
+}
 .border_herramientas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -218,16 +224,18 @@ h1 {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: flex-start;
     }
     .container_link {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        font-size: 65%;
     }
     .container_button {
         text-align: center;
-        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20%;
     }
     .container_body {
         flex-direction: column;
@@ -241,11 +249,26 @@ h1 {
         flex-direction: column;
         align-items: flex-start;
     }
-    .about h2, .valores h2 {
-        margin-left: 0;
+    .about h2{
+        margin-left: 30%;
+    }
+    .about h3 {
+        margin-left: 5%;
+    }
+    .valores .h2 {
+      margin-left: 30%;
+    }
+    .valores h3 {
+        margin-left: 13%;
     }
     .container_herramientas {
         grid-template-columns: 1fr;
+    }
+    .container_informacion h1 {
+        text-align: center;
+    }
+    .intermedio h1 {
+        text-align: center;
     }
     .border_herramientas {
         grid-template-columns: 1fr;
