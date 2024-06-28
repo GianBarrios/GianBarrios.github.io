@@ -1,3 +1,8 @@
+:root{
+    --margen-superior: 2rem;
+    --margen-inferior: 1.5rem
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -233,7 +238,51 @@ h1 {
     font-size: 1em;
     margin-top: 5px;
 }
+.container_proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 1.5rem;   
+}
+.proyectos {
+    text-align: center;
+}
+.experiencia{
+    text-align: center;
+}
+.container_trabajos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: var(--margen-superior);
+    border: 1px #dcd9d8 solid;
+}
+.container_fechas {
+    border: 1px #dcd9d8 solid;
 
+}
+.container_fechas h3 {
+    margin-top: 50%;;
+}
+.container_descripcion {
+    border: 1px #dcd9d8 solid;
+}
+.container_descripcion h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px #dcd9d8  solid;
+}
+.container_descripcion h2 {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.container_descripcion h3{
+    border-top: 1px #dcd9d8  solid;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     nav {
