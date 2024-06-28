@@ -258,10 +258,12 @@ h1 {
 }
 .container_fechas {
     border: 1px #dcd9d8 solid;
-
+    padding-top: 80%;
 }
 .container_fechas h3 {
-    margin-top: 50%;;
+        font-size: 15px;
+        margin-bottom: 0px;
+        margin-top: 0px;
 }
 .container_descripcion {
     border: 1px #dcd9d8 solid;
@@ -341,5 +343,22 @@ h1 {
     .container_edad, .container_residencia, .container_direccion, .container_correo, .container_telefono {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .container_proyectos, .container_trabajos {
+        grid-template-columns: 1fr;
+    }
+    .container_fechas {
+        grid: 0%;
+    }
+    .container_fechas h3 {
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .container_descripcion h1, .container_descripcion h2, .container_descripcion h3 {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
