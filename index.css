@@ -246,50 +246,48 @@ h1 {
 }
 .proyectos {
     text-align: center;
+    border: 5px #ccc solid;
 }
-.experiencia{
+.experiencia {
     text-align: center;
 }
 .container_trabajos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: var(--margen-superior);
-    border: 1px #dcd9d8 solid;
+    border: #ccc 1.5rem solid;
+    border-radius: 25px;
 }
-.container_fechas {
-    border: 1px #dcd9d8 solid;
-    padding-top: 80%;
+.container_fechas{
+    border-bottom: #ccc 5px solid;
+    border-right: #ccc 5px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40%;
 }
-.container_fechas h3 {
-        font-size: 15px;
-        margin-bottom: 0px;
-        margin-top: 0px;
+.container_fechas h3{
+    margin: 0;
 }
 .container_descripcion {
-    border: 1px #dcd9d8 solid;
+    border-bottom: #ccc 5px solid;
 }
-.container_descripcion h1 {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px #dcd9d8  solid;
+.container_descripcion h1{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
 }
-.container_descripcion h2 {
-    text-align: left;
-    margin-top: 0px;
-    margin-bottom: 0px;
+.container_descripcion h2{
+    margin: 0;
 }
-.container_descripcion h3{
-    border-top: 1px #dcd9d8  solid;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    body {
+        margin: 0;
+    }
     nav {
         flex-direction: column-reverse;
         align-items: flex-start;
+        margin: 0;
     }
     .container_link {
         flex-direction: row;
@@ -327,6 +325,12 @@ h1 {
     }
     .container_herramientas {
         grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .intermedio{
+        border: #ccc 5px solid;
+        margin-left: 0;
+        margin-right: 0;
     }
     .container_informacion h1 {
         text-align: center;
@@ -344,21 +348,16 @@ h1 {
         flex-direction: column;
         align-items: flex-start;
     }
-    .container_proyectos, .container_trabajos {
+    .container_proyectos{
+        margin: 5px;
+        text-align: center;
         grid-template-columns: 1fr;
+    } 
+    .experiencia h1 {
+        text-align: center;
+        margin-bottom: 1rem;
     }
     .container_fechas {
-        grid: 0%;
-    }
-    .container_fechas h3 {
-        font-size: 15px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .container_descripcion h1, .container_descripcion h2, .container_descripcion h3 {
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        padding-top: 10rem;
     }
 }
