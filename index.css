@@ -341,12 +341,20 @@ h1 {
     .border_herramientas {
         grid-template-columns: 1fr;
     }
-    .container_informacion {
+    .container_informacion h1 {
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+    .container_informacion  {
+        margin-top: 20px;
         margin-left: 0;
     }
-    .container_edad, .container_residencia, .container_direccion, .container_correo, .container_telefono {
+    .container_edad, .container_pais, .container_residencia, .container_direccion, .container_correo, .container_telefono {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .edad_num{
+        padding-left: 0;
     }
     .container_proyectos{
         margin: 5px;
