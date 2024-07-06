@@ -13,3 +13,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
         alert ("Usuario y o contraseña incorrectos");
     }
 })
+
+document.getElementById("registrarse").addEventListener("click", function(){
+    window.location.href=".\\registro\\registro.html"
+})
