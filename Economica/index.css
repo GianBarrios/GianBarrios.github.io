@@ -102,3 +102,10 @@ a {
     border: #ccc 1px solid;
     cursor: pointer;
 }
+.regresar {
+    margin-top: 7px;
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: #ccc 1px solid;
+    cursor: pointer;
+}
