@@ -1,6 +1,11 @@
 const users = JSON.parse(localStorage.getItem('users')) || ["gianfranco"];
 const password = JSON.parse(localStorage.getItem('password')) || ["2424"];
-const frutas =["sandias"];
+const alimentos = {
+    nombre: "sandia",
+    cantidad: "2",
+    precio: "20",
+    categoria: "frutas",
+};
 
 export {users, password };
 
