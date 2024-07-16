@@ -1,3 +1,3 @@
 document.getElementById("econimica").addEventListener("click",function(){
-    window.location.href=".\\Economica\\index.html"
+    window.location.href="./Funsalud/frontend/index.html"
 })
