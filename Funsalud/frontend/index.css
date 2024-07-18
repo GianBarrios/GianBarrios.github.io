@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,8 +8,14 @@ body {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: #f8f9fa;
     padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -50,10 +59,16 @@ button.Ingresar {
 button.Ingresar:hover {
     background-color: #0056b3;
 }
+
 .container-carousel {
     width:100%;
-    margin-top: 45px;
+    margin-top: 80px;
     margin-left: 15px;
+}
+.container-carousel h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .slider-wrapper {
     position: relative;
@@ -138,6 +153,37 @@ button.Ingresar:hover {
     top: -10px;
     bottom: -10px;
 }
+.container-valores {
+    margin-top: 35px;
+}
+.container-valores h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-mision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   margin-top: 35px;
+   gap: 20px;
+}
+.mision-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mision-image img {
+    width: 500px;
+    height: 320px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 1023px){
     .container-carousel{

@@ -60,3 +60,7 @@ const initSlider =() => {
 }
 
 window.addEventListener("load", initSlider);
+
+document.getElementById("ingresar").addEventListener("click",function(){
+    window.location.href="../frontend/login/login.html"
+})
