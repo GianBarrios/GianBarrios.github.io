@@ -1,0 +1,275 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    background-image: linear-gradient(
+        to bottom right, #5b7fff,#33ccfc
+    );
+}
+.container-nav{
+    background-color: #33ccfc;
+    width: 100%;
+    height: 35px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.container-nav a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    font-size: 1.3rem;
+}
+.container-home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+}
+.container-foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px 25px 15px;
+}
+.container-foto img {
+    width: 25rem;
+    height: 28rem;
+    border-radius: 100%;
+    padding: 0 0 15px;
+}
+.container-nombre{
+    padding: 15px;
+}
+.container-nombre h3{
+    text-align: start;
+    color: white;
+}
+.container-correo{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    gap: 4rem;
+}
+.container-correo{
+    padding: 0 0 0 15px;
+}
+.correo h3{
+    margin: 15px 0 0 0;
+}
+.correo h4 {
+    margin: 0;
+    color: white;
+}
+.portafolio h3{
+    margin: 15px 0 0 0;
+}
+.portafolio h4 {
+    margin: 0;
+    color: white;
+}
+.container-cv {
+    margin: 35px 0 0 15px;
+    text-align: start;
+    
+}
+.container-cv button {
+    width: 140px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background: #33ccfc;
+    color: white;
+}
+.container-red{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 25px 0 0 15px;
+}
+.container-red .twitter {
+    text-align: center;
+    align-items: center;
+}
+.container-red .twitter button {
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+.container-red .facebook{
+    color: rgb(104, 104, 104);
+}
+.container-red .linkdin{
+    color: rgb(104, 104, 104);
+}
+.container-red .instagram{
+    color: rgb(104, 104, 104);
+}
+.container-habilidades {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+
+}
+
+.freelancer, .framework, .iot {
+    display: none;
+}
+.container-html{
+    margin-bottom: 10px;
+}
+.html{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.html i {
+  margin-left: 15px;
+}
+.html h5{
+    margin: 0 0 0 auto;
+}
+.container-css{
+    margin-bottom: 10px;
+}
+.css{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.css i {
+  margin-left: 15px;
+}
+.css h5{
+    margin: 0 0 0 auto;
+}
+.container-js{
+    margin-bottom: 10px;
+}
+.js{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.js i {
+  margin-left: 15px;
+}
+.js h5{
+    margin: 0 0 0 auto;
+}
+
+.container-github{
+    margin-bottom: 10px;
+}
+.github{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.github i {
+  margin-left: 15px;
+}
+.github h5{
+    margin: 0 0 0 auto;
+}
+
+.container-angular{
+    margin-bottom: 10px;
+}
+.angular{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.angular i {
+  margin-left: 15px;
+}
+.angular h5{
+    margin: 0 0 0 auto;
+}
+.container-react{
+    margin-bottom: 10px;
+}
+.react{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.react i {
+  margin-left: 15px;
+}
+.react h5{
+    margin: 0 0 0 auto;
+}
+.container-ts{
+    margin-bottom: 10px;
+}
+.ts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ts i {
+  margin-left: 15px;
+}
+.ts h5{
+    margin: 0 0 0 auto;
+}
+.container-c{
+    margin-bottom: 10px;
+}
+.c{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.c i {
+  margin-left: 15px;
+}
+.c h5{
+    margin: 0 0 0 auto;
+}
+progress{
+    margin-left: 15px;
+    width: 98%;
+    height: 20px;
+}
+progress::-webkit-progress-bar{
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+progress::-webkit-progress-value{
+    background-color: #4acf50;
+    border-radius: 10px 0 0 10px;
+}
+.descripcion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 4rem;
+    padding-top: 5rem;
+    gap: 10px;
+}
+.freelancer-button {
+    background: #5b7fff;
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+}
+.framework-button {
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+}
+.iot-button {
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+}

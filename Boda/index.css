@@ -1,0 +1,50 @@
+:root{
+    --verde: #879981;
+    --salmon: #FDAF8B;
+    --durazno: #F7D4C1;
+    --azul: #37435B;
+}
+*body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container-image{
+    height: 25rem;
+    width: 100%;
+    background: black;
+    position: relative;
+    display: inline-block;
+}
+.container-image img{
+    height: 100%;
+    width: 100%;
+}
+.container-image h2, .container-image h3 {
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+}
+.container-image h2 {
+    top: 1px;
+    left: 35%;
+    font-family: "Grey Qo", cursive;
+    font-size: 1.8rem;
+    font-style: normal;
+    
+}
+.container-image h3 {
+    top: 40px;
+    left: 25%;
+}
+.container-invitados {
+    margin-top: 5px;
+}
+.container-invitados h1{
+    color: var(--azul);
+    font-family: ;
+    font-family: Baguet Script;
+}
+.container-invitados h2{
+    color: var(--azul);    
+}
