@@ -3,193 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".\\index.css">
-    <title>Mi Portafolio</title>
+    <title>Nuestra Boda</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="container_link">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Portafolio</a>
-            <a href="">Blog</a>  
-            <a href="">Contact</a>          
-        </div>
-        <div class="container_button">
-            <a href=".\\Imagenes\\Gianfranco_Barrios.pdf" download="CV_Gianfranco">
-                <button>Descargar CV</button>
-            </a>
-        </div>
-        <button class="menu-button" onclick="toggleMenu()">Menu</button>
-    </nav>
-    <div class="menu-content" id="menu-content">
-        <a href="">Estudios</a>
-        <a href="">Experiencia</a>
-        <a href="">Proyectos</a>
-        <a href="">Sobre Mi</a>
-        <a href="">Contacto</a>
-        <div class="container_button">
-            <a href=".\\Imagenes\\Gianfranco_Barrios.pdf" download="CV_Gianfranco">
-                <button>Descargar CV</button>
-            </a>
-        </div>
+    <div class="container-image">
+        <img src=".\\imagenes\\Boda5.jpeg" alt="">
+        <h2>Nos Casamos</h2>
+        <h3>Gianfranco y Claudia </h3>
     </div>
-    <div class="container_body">
-            <div class="container_foto">
-                <img src=".\\Imagenes\\Foto.jpeg" alt="">
-            </div>
-            <div class="container_presentacion">
-                <h2>Hola, Yo soy</h2>
-                <h1>GIANFRANCO BARRIOS</h1>
-                <h3>Programador Frontend, HTML Coder</h3>
-                <h3>Programador PHP, Asistente de informatica</h3>
-        </div>
+    <div class="container-invitados">
+        <h1>Estas Invitado!</h1>
+        <h2>Queremos que seas parte de este 
+            momento tan especial.
+        </h2>
     </div>
-    <div class="container_about">
-        <div class="about">
-            <h2>Sobre Mi</h2>
-           <h3>Me gusta diseñar proyectos </h3>
-           <h3>Ser autodidacta, la astronomia</h3>
-           <h3>La ciencia, las computadoras</h3>
-           <h3>Y el aprender un poco sobre todo </h3>
-        </div>   
-        <div class="valores">
-            <h2>Mis valores</h2>
-            <h3>Soy una persona honrada</h3>
-            <h3>responsable, trabajador</h3>
-            <h3>de buenos principios y respetuosa</h3>
-        </div>         
-    </div>
-    <div class="container_herramientas">
-        <div class="container_informacion">
-            <h1>INFORMACION PERSONAL</h1>
-            <div class="container_edad">
-                <div class="edad">Edad:</div>
-                <div class="edad_num">25</div>
-            </div>
-            <div class="container_pais">
-                <div class="pais">Pais: </div>
-                <div class="pains_ubi">Guatemala</div>
-            </div>
-            <div class="container_residencia">
-                <div class="residencia">Residencia:</div>
-                <div class="residencia_ubi">Aldea Chiquirines, la blanca, san marcos</div>
-            </div>
-            <div class="container_direccion">
-                <div class="direccion">Direccion:</div>
-                <div class="direccion_ubi">calle del campo, zona 0</div>
-            </div>
-            <div class="container_correo">
-                <div class="correo">Correo:</div>
-                <div class="correo_ubi">Barriosgianfranco@gmail.com</div>
-            </div>
-            <div class="container_telefono">
-                <div class="telefono">Telefono: </div>
-                <div class="telefono_ubi"> +502 3655-7574</div>
-            </div>
-        </div>
-        <div class="intermedio">
-            <h1>MIS HABILIDADES</h1>
-            <div class="border_herramientas">
-                <div class="container_html">
-                    <div class="porcentaje_html">45%</div>
-                    <div class="nombre_diseño">HTML</div>
-                </div>
-                <div class="container_css">
-                    <div class="porcentaje_css">55%</div>
-                    <div class="nombre_css"> CSS NATIVO </div>
-                </div>
-                <div class="container_js">
-                    <div class="porcentaje_js">20%</div>
-                    <div class="nombre_js">JAVASCRIPT NATIVO</div>
-                </div>
-                <div class="container_php">
-                    <div class="porcentaje_php">35%</div>
-                    <div class="nombre_php">PHP</div>
-                </div>
-                <div class="container_angular">
-                    <div class="porcentaje_angular">10%</div>
-                    <div class="nombre_angular">ANGULAR</div>
-                </div>
-                <div class="container_cplus">
-                    <div class="porcentaje_cplus">40%</div>
-                    <div class="nombre_cplus">C++</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container_proyectos">
-        <div class="proyectos">
-            <h1>MIS PROYECTOS</h1>
-            <div container="proyectos">
-                <div class="containerButton">
-                    <button id="econimica" class="economica">Funsalud</button>
-                </div>
-            </div>
-        </div>
-        <div class="experiencia">
-            <h1>Experiencia profesional</h1>
-            <div class="container_trabajos">
-                <div class="container_fechas">
-                        <h3>Del 01/03/2018
-                            Al 16/11/2020
-                        </h3>
-                        <h3>
-                            Aldea los encuentros
-                        </h3>
-                </div>
-                <div class="container_descripcion">
-                    <h1>Fundacion para la salud integral de los Guatemaltecos</h1>
-                    <h2>Tecnico IT</h2>
-                    <h2>Tareas realizadas:</h2>
-                    <h3>Control de conexiones a la red, mantenimiento de 
-                        computadoras, manejo de pagina web en weebly y facebook
-                        control de vehiculos, control y manejo de bodega                   
-                        apoyo en area administrativa, encargado de camaras de seguridad
-                        y equipos telefonicos 
-                    </h3>
-                </div>
-                <div class="container_fechas">
-                    <h3>Del 04/05/2021
-                        Al 31/12/2022
-                    </h3>
-                    <h3>
-                        Mazatenango, San marcos
-                    </h3>
-                </div>
-                <div class="container_descripcion">
-                    <h1>Puente de Amistad </h1>
-                    <h2>Facilitador de creditos y educacion</h2>
-                    <h2>Tareas realizadas:</h2>
-                    <h3>Formacion de bancas comunales para solicitudes de credito
-                        facilitar solicitudes de creditos grupales e individuales
-                        charlas educativas, llenado de expendientes, cobranza
-                    </h3>
-                </div>
-                <div class="container_fechas">
-                    <h3>Del 01/03/2023
-                        Hasta la fecha
-                    </h3>
-                    <h3>
-                        San vicente pacaya, coatepeque    
-                    </h3>
-                </div>
-                <div class="container_descripcion">
-                    <h1>Grupo Hame</h1>
-                    <h2>Asistente de soporte Tecnico</h2>
-                    <h2>Tareas realizadas:</h2>
-                    <h3>Configuracion de computadoras, control de enlaces punto a punto
-                        cableado estructurado, manejo de data center, control de bodega de informatica
-                        manejo de consola de antivirus kaspersky, configuracion de extensiones telefonicas
-                        reparacion de impresoras y computadoras, configuracion de antenas
-                        instalacion de amplificadores de señal y configuracion de sistemas biometricos 
-                    </h3>
-                </div>
-                </div>
+    <div class="countdown">
 
+        <div class="container-days">
+            <span id="days"></span>
         </div>
-    </div>
-    <script type="module" src=".\\index.js"></script>
+        
+        <div class="container-hours">
+            <span id="hours"></span>
+        </div>
+        <div class="container-minutes">
+            <span id="minutes"></span>
+        </div>
+        <div class="container-seconds">
+            <span id="seconds"></span>
+        </div>
+
+    
+        <script src="./index.js"></script>
 </body>
+
 </html>
