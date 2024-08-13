@@ -4,6 +4,7 @@
     --durazno: #F7D4C1;
     --azul: #37435B;
 }
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 *body{
     margin: 0;
     padding: 0;
@@ -27,27 +28,38 @@
     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
 }
 .container-image h2 {
+    margin-top: 5px;
     top: 1px;
-    left: 35%;
-    font-family: "Grey Qo", cursive;
-    font-size: 1.8rem;
+    left: 27%;
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
     font-style: normal;
+    font-size: 40px;
     
 }
 .container-image h3 {
-    top: 40px;
-    left: 25%;
+    top: 35px;
+    left: 30%;
 }
 .container-invitados {
     margin-top: 5px;
 }
 .container-invitados h1{
-    color: var(--azul);
-    
-    font-family: Baguet Script;
+  color: var(--azul);
+  font-family: "Great Vibes", cursive;
+  font-weight: 600;
+  font-style: normal;
+  padding-left: 3rem;
+  margin-bottom: 2px;
+  font-size: 50px;
+
 }
 .container-invitados h2{
-    color: var(--azul);    
+    color: var(--azul);
+    font-size: 15px;
+    padding-left: 0.6rem;
+    margin-top: 5px;  
+    margin-bottom: 2rem;  
 }
 .countdown {
     display: flex;
