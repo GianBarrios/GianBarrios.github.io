@@ -25,6 +25,12 @@ function updateCountdown() {
         document.querySelector(".countdown").innerHTML = "<h2>¡El tiempo ha terminado!</h2>";
     }
 }
+function redirectToMaps(){
+    var latitude = 14.703807542803924;
+    var longitude = -91.99745658015914;
+    var mapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+    window.location.href = mapsUrl;
+}
 
 // Actualizar el contador cada segundo
 const countdownInterval = setInterval(updateCountdown, 1000);

@@ -133,13 +133,48 @@ body{
     font-weight: bold;
     margin: 0;
 }
+.iglesia {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.esperamos{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .container-fecha {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 1px;
 }
-.container-ceremonia h4{
+.container-fecha h2:first-of-type{
+    border-right: 2px solid var(--verde);
+    padding-right: 10px;
+}
+.aldea{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.coatepeque{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.container-ubicacion{
+    display: flex;
+    justify-content: center;
+}
+.ubicacion {
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border-color: var(--salmon);
+    background: var(--durazno);
+    color: var(--azul);
+}   
+.container-copas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
 }
 
