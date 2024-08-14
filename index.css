@@ -60,7 +60,12 @@ body{
     font-size: 15px;
     padding-left: 0.6rem;
     margin-top: 5px;  
-    margin-bottom: 2rem;  
+    margin-bottom: 2rem; 
+    display: flex;
+    justify-content: center;
+}
+.container-invitados h2:first-of-type{
+    margin-bottom: 0;
 }
 .countdown {
     display: grid;
