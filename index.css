@@ -122,12 +122,24 @@ body{
     height: 100px;
 }
 .container-ceremonia{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
     color: var(--azul);
+    margin-bottom: 0 ;
 }
 .container-ceremonia .ceremonia{
     font-size: 30px;
     font-weight: bold;
+    margin: 0;
+}
+.container-fecha {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1px;
+}
+.container-ceremonia h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
