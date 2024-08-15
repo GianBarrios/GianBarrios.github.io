@@ -195,16 +195,61 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 30px;
     width: 100%;
     height: 100px;
 }
 .container-foto h1{
-    margin-top: -30px;
+    margin-top: -40px;
     margin-bottom: 0;
 }
 .container-foto h3{
-    margin-top: -60px;
+    margin-top: -50px;
     margin-bottom: 0;
+}
+.container-link{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: -6rem;
+}
+.link-fotos{
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border-color: var(--salmon);
+    background: var(--durazno);
+    color: var(--azul);
+    text-align: center;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+.link-album{
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border-color: var(--salmon);
+    background: var(--durazno);
+    color: var(--azul);
+    text-align: center;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: -3rem;
+}
+.container-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 20rem;
+    height: 5rem;
+    gap: 10px;
+}
+.imagenes img {
+    width: 100%;
+    height: 100%;
 }
 
