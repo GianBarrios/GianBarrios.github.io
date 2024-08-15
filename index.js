@@ -32,5 +32,10 @@ function redirectToMaps(){
     window.location.href = mapsUrl;
 }
 
+function redirectToLink() {
+    var url = "https://onelifesocial.page.link/ZYJg";
+    window.location.href = url;
+}
+
 // Actualizar el contador cada segundo
 const countdownInterval = setInterval(updateCountdown, 1000);
