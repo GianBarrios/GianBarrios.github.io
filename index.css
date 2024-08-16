@@ -250,6 +250,7 @@ body{
 .imagenes img {
     width: 100%;
     height: 100%;
+    margin-left: 5px;
 }
 .imagenes img:nth-child(1)
 {
@@ -257,10 +258,10 @@ body{
 }
 .imagenes img:nth-child(2){
     width: 100%;
-    height:15rem;
+    height: 15rem;
 }
 .imagenes img:nth-child(3){
-    height: 150%;
+    height: 130%;
     margin-top: -4.5rem;
 }
 .imagenes img:nth-child(4){
