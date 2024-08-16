@@ -42,9 +42,18 @@ body{
     top: 35px;
     left: 30%;
 }
-.container-invitados {
-    margin-top: 1px;
+
+.container-audio{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
+.container-audio audio {
+    height: 2rem;
+}
+
 .container-invitados h1{
   color: var(--azul);
   font-family: "Great Vibes", cursive;
